@@ -2,12 +2,11 @@ import { createClient } from "@sanity/client";
 import { createImageUrlBuilder } from "@sanity/image-url";
 
 export const client = createClient({
-  projectId: "d3j8d22l",
+  projectId: "",
   dataset: "production",
   useCdn: true,
   apiVersion: "2025-12-13",
-  token:
-    "skQOQL4USi4oKmWRTAIQdtp6Ylhm6fbcM2YEKTEW2M30wUqTXimFWiplxIPElg8Pwy7A4KTmb03LgO17HzgziIjm3zw3ylVQA4eB0MbmiNEWb7WxTkROdFbaO8D4ky1U2XTTRZx8iQNCVwetUsrGxVCDEBWhVN00D1vLgIDOCgcJQcroMa3O",
+  token: "",
 });
 
 const builder = createImageUrlBuilder(client);
