@@ -32,3 +32,22 @@ For the third project, we are going to build a personal blog using the Sanity CM
 4. Add comments on blog posts
 
 > We are going to be doing everything from scratch. So get ready to type...a lot.
+
+### How to run
+1. Clone or download the repository:
+
+`git clone https://github.com/sankthomas/react-vite-course`
+
+2. Open the folder in your favorite code editor.
+
+3. Navigate into the project you want, for example:
+
+`cd 1-agency-website`
+
+4. Install dependencies using your package manager:
+
+`npm i` or `pnpm i` or `yarn add`
+
+5. Run your dev server:
+
+`npm run dev` or `pnpm dev` or `yarn dev`
