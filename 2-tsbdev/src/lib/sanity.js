@@ -24,7 +24,9 @@ export const getBlogPosts = async () => {
         publishedAt,
         excerpt,
         mainImage,
-        tags,
+        "tags": categories[]->{
+          title
+        },
         author->{
           name,
           image
@@ -44,7 +46,9 @@ export const getBlogPost = async (slug) => {
       excerpt,
       publishedAt,
       mainImage,
-      tags,
+      "tags": categories[]->{
+        title
+      },
       author->{
         name,
         image
