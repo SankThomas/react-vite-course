@@ -34,7 +34,7 @@ export default function BlogCard({ post, onClick }) {
                 className="inline-flex items-center px-2 py-1 bg-magenta/10 text-magenta text-xs rounded-full border border-magenta/20"
               >
                 <Tag className="size-3 mr-2" />
-                {tag}
+                {tag.title}
               </span>
             ))}
           </div>
