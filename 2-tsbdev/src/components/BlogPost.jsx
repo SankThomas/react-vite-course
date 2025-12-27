@@ -81,11 +81,13 @@ export default function BlogPost() {
         </h1>
 
         {post.excerpt && (
-          <p className="text-xl text-gray-400 mb-6">{post.excerpt}</p>
+          <p className="text-xl text-gray-400 mb-6 border-l-4 italic pl-4">
+            {post.excerpt}
+          </p>
         )}
 
         <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500">
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center">
               <Calendar className="size-4 mr-1" />
               {formatDate(post.publishedAt)}
@@ -113,13 +115,13 @@ export default function BlogPost() {
           </div>
 
           {post.tags && post.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap gap-2">
               {post.tags.map((tag, index) => (
                 <span
                   key={index}
                   className="px-3 py-1 bg-magenta/10 text-magenta text-sm rounded-full border border-magenta/20"
                 >
-                  {tag}
+                  {tag.title}
                 </span>
               ))}
             </div>
